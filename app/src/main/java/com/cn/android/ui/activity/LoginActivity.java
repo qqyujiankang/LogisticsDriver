@@ -292,6 +292,7 @@ public final class LoginActivity extends MyActivity
             case R.id.iv_login_qq:
                 break;
             case R.id.iv_login_wx:
+
                 break;
         }
     }
