@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context="com.cn.android.ui.activity.BuyVIPActivity">
+
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:lineVisible="false"
+        app:rightColor="@color/textColor"
+        app:title="账号与安全"
+        app:titleSize="18sp" />
+
+    <com.hjq.widget.layout.SettingBar
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_leftColor="#545454"
+        app:bar_leftText="手机号"
+        app:bar_rightIcon="@drawable/icon_next" />
+
+    <View style="@style/HorizontalLineStyle" />
+
+</LinearLayout>

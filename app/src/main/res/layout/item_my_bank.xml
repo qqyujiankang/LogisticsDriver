@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="131dp"
+    android:background="@drawable/bg_bank"
+    android:layout_marginTop="13dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        android:text="中国建设银行" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="58dp"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:text="储蓄卡" />
+
+    <TextView
+        android:id="@+id/bank_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="**** **** **** 1234" />
+</LinearLayout>

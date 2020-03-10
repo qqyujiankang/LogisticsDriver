@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:backButton="true"
+        app:titleColor="@color/textColor"
+        app:titleSize="18sp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mytab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorAccent">
+    </com.google.android.material.tabs.TabLayout>
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_height="1dp"
+        android:background="#ECECEC" />
+    <com.hjq.widget.layout.NoScrollViewPager
+        android:id="@+id/mViewPager"
+        android:layout_below="@id/mytab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </com.hjq.widget.layout.NoScrollViewPager>
+
+
+</LinearLayout>

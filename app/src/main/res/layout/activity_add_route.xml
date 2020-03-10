@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ui.CopyActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:rightColor="@color/textColor"
+        app:rightTitle="确定"
+        app:title="添加路线" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="请选择主路线"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_route1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:text="是否往返"
+                    android:button="@drawable/selector_checkbox" />
+            </LinearLayout>
+
+                <com.hjq.widget.layout.SettingBar
+                    android:id="@+id/route1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bar_leftColor="#999999"
+                    app:bar_leftSize="14sp"
+                    app:bar_leftText="主路线起始地"
+                    app:bar_rightIcon="@drawable/icon_next" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/route1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="#999999"
+                app:bar_leftSize="14sp"
+                app:bar_leftText="主路线目的地"
+                app:bar_rightIcon="@drawable/icon_next" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="请选择辅路线"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_route2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:text="是否往返"
+                    android:button="@drawable/selector_checkbox" />
+            </LinearLayout>
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/route2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="#999999"
+                app:bar_leftSize="14sp"
+                app:bar_leftText="辅路线起始地"
+                app:bar_rightIcon="@drawable/icon_next" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/route2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="#999999"
+                app:bar_leftSize="14sp"
+                app:bar_leftText="辅路线目的地"
+                app:bar_rightIcon="@drawable/icon_next" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="请选择辅路线"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_route3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:text="是否往返"
+                    android:button="@drawable/selector_checkbox" />
+            </LinearLayout>
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/route3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="#999999"
+                app:bar_leftSize="14sp"
+                app:bar_leftText="辅路线起始地"
+                app:bar_rightIcon="@drawable/icon_next" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/route3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="#999999"
+                app:bar_leftSize="14sp"
+                app:bar_leftText="辅路线目的地"
+                app:bar_rightIcon="@drawable/icon_next" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

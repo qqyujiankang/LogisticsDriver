@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linaer_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_marginTop="11dp"
+    android:background="@mipmap/coupon_a"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/coupon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#404040"
+            android:textSize="17sp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="16dp"
+            tools:text="定金减免券" />
+
+        <TextView
+            android:id="@+id/coupon_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            tools:text="有效期：2019.09.17之前" />
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="bottom"
+            android:paddingBottom="18dp"
+            android:textColor="#666666"
+            android:text="使用说明" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/coupon_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="31sp"
+            android:textColor="@color/white"
+            android:drawableLeft="@mipmap/money_icon_white"
+            android:drawablePadding="5dp"
+            android:textStyle="bold"
+            tools:text="5" />
+
+        <TextView
+            android:id="@+id/coupon_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            tools:text="满￥50使用" />
+    </LinearLayout>
+</LinearLayout>

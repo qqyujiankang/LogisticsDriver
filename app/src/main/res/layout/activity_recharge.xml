@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cn.android.ui.activity.BuyVIPActivity">
+
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:lineVisible="false"
+        app:rightColor="@color/textColor"
+        app:title="充值"
+        app:titleSize="18sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftText="选择支付方式" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/wx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/vip_wx"
+                app:bar_leftText="微信"
+                app:bar_rightIcon="@mipmap/vip_select" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/zfb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/vip_zfb"
+                app:bar_leftText="设置"
+                app:bar_rightIcon="@mipmap/vip_un_select" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="充值金额" />
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/text_red"
+                android:background="@null"
+                android:textSize="18sp"
+                android:inputType="numberDecimal"
+                android:drawableLeft="@mipmap/money_icon"
+                android:drawablePadding="5dp"
+                android:hint="请输入金额" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/but_buy"
+        style="@style/MyButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="确认支付" />
+</LinearLayout>

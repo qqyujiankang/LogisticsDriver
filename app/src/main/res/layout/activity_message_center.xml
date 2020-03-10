@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".ui.activity.BindActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:title="消息中心" />
+
+    <LinearLayout
+        android:id="@+id/linear_msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/message_center1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通知"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/msg_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/text_hint"
+                android:textSize="12sp"
+                tools:text="您的账号于2019-11-29 19:00绑定微信，如非本人操作建议您解绑第三方" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/linear_msg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/message_center2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的会员"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/msg_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/text_hint"
+                android:textSize="12sp"
+                tools:text="恭喜你，成功成为VIP会员，您已获得会员专属优惠券，别忘了领取哦~" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/linear_msg3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/message_center3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订单回执"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/msg_content3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/text_hint"
+                android:textSize="12sp"
+                tools:text="您的订单已被受理，请您耐心等待。请您耐心等待。请您耐心等待。" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/linear_msg4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/message_center4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订单结算"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/msg_content4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/text_hint"
+                android:textSize="12sp"
+                tools:text="您的订单已结算完毕，钱款已进入您的账户余额，请注意查收！" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

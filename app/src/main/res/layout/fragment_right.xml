@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7F7F7">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/my_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/my_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        tools:src="@tools:sample/avatars[1]" />
+
+                    <TextView
+                        android:id="@+id/my_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:textColor="#ECECEC"
+                        android:textSize="15sp"
+                        tools:text="12388888332" />
+
+                    <ImageView
+                        android:id="@+id/bill_flow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@mipmap/bill_flow" />
+                    <ImageView
+                        android:id="@+id/my_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@mipmap/my_msg" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="-4dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/vip_bg" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/bg_radius_15_white"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingTop="20dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="账户余额"
+                                android:textColor="@color/textColor" />
+
+                            <TextView
+                                android:id="@+id/my_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:drawableLeft="@mipmap/money_icon"
+                                android:drawablePadding="5dp"
+                                android:gravity="center"
+                                android:text="00.00"
+                                android:textColor="#F24915"
+                                android:textSize="22sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/withdraw"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="提款"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="会员可享显示更多服务"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/open_vip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="@mipmap/vip_but_bg"
+                            android:gravity="center"
+                            android:text="开通会员"
+                            android:textColor="#AC6500" />
+
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <com.hjq.widget.layout.SettingBar
+                            android:id="@+id/menu1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:bar_leftColor="#545454"
+                            app:bar_leftIcon="@mipmap/menu_ny2"
+                            app:bar_leftText="车辆信息"
+                            app:bar_rightIcon="@drawable/icon_next" />
+
+                        <View style="@style/HorizontalLineStyle" />
+
+                        <com.hjq.widget.layout.SettingBar
+                            android:id="@+id/menu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:bar_leftColor="#545454"
+                            app:bar_leftIcon="@mipmap/menu_ny3"
+                            app:bar_leftText="设置"
+                            app:bar_rightIcon="@drawable/icon_next" />
+
+                        <View style="@style/HorizontalLineStyle" />
+
+                        <com.hjq.widget.layout.SettingBar
+                            android:id="@+id/menu3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:bar_leftColor="#545454"
+                            app:bar_leftIcon="@mipmap/menu_ny4"
+                            app:bar_leftText="银行卡绑定"
+                            app:bar_rightIcon="@drawable/icon_next" />
+
+                        <View style="@style/HorizontalLineStyle" />
+
+                        <com.hjq.widget.layout.SettingBar
+                            android:id="@+id/menu4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:bar_leftColor="#545454"
+                            app:bar_leftIcon="@mipmap/menu_ny5"
+                            app:bar_leftText="路线信息"
+                            app:bar_rightIcon="@drawable/icon_next" />
+
+                        <View style="@style/HorizontalLineStyle" />
+
+                        <com.hjq.widget.layout.SettingBar
+                            android:id="@+id/menu5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:bar_leftColor="#545454"
+                            app:bar_leftIcon="@mipmap/menu_ny6"
+                            app:bar_leftText="会员券"
+                            app:bar_rightIcon="@drawable/icon_next" />
+
+                        <View style="@style/HorizontalLineStyle" />
+
+
+                        <com.hjq.widget.layout.SettingBar
+                            android:id="@+id/menu6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:bar_leftColor="#545454"
+                            app:bar_leftIcon="@mipmap/menu_ny8"
+                            app:bar_leftText="版本信息"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

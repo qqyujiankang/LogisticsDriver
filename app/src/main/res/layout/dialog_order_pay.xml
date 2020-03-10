@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_show_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:drawableLeft="@mipmap/icon_bargaining"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/textColor"
+                    android:text="预付定金" />
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@mipmap/money_icon"
+                    android:textColor="@color/text_red"
+                    tools:text="3" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@mipmap/icon_insure"
+                android:drawablePadding="5dp"
+                android:textColor="@color/textColor"
+                android:text="意外保险" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/zrx"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:bar_leftSize="13sp"
+                app:bar_lineVisible="false"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/vip_un_select"
+                app:bar_leftText="物流责任险"/>
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/fkx"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:bar_leftSize="13sp"
+                app:bar_lineVisible="false"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/vip_un_select"
+                app:bar_leftText="放空险"/>
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/dsx"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:bar_leftSize="13sp"
+                app:bar_lineVisible="false"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/vip_un_select"
+                app:bar_leftText="待时险"/>
+
+            <View style="@style/HorizontalLineStyle" android:layout_marginTop="50dp"/>
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/wx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/vip_wx"
+                app:bar_leftText="微信"
+                app:bar_rightIcon="@mipmap/vip_select" />
+
+            <View style="@style/HorizontalLineStyle" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/zfb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/vip_zfb"
+                app:bar_leftText="支付宝"
+                app:bar_rightIcon="@mipmap/vip_un_select" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/ye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftColor="@color/textColor"
+                app:bar_leftIcon="@mipmap/icon_ye"
+                app:bar_leftText="余额"
+                app:bar_rightIcon="@mipmap/vip_un_select" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/but_pay"
+        style="@style/MyButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="确认支付" />
+
+</LinearLayout>

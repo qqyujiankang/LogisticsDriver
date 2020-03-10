@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ui.CopyActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:title="添加银行卡" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/textColor"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:text="账户名" />
+
+                        <com.hjq.widget.view.ClearEditText
+                            android:id="@+id/account"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_hint"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:background="@null"
+                            android:hint="姓名" />
+                    </LinearLayout>
+                    <View style="@style/HorizontalLineStyle"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/textColor"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:text="开户银行" />
+
+                        <TextView
+                            android:id="@+id/bankName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/textColor"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/bg_radius"
+                            android:drawableRight="@mipmap/down_icon"
+                            android:paddingRight="10dp"
+                            android:text="选择银行" />
+                    </LinearLayout>
+                    <View style="@style/HorizontalLineStyle"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/textColor"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:text="银行卡号" />
+
+                        <com.hjq.widget.view.ClearEditText
+                            android:id="@+id/bankNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_hint"
+                            android:inputType="numberSigned"
+                            android:paddingLeft="10dp"
+                            android:background="@null"
+                            android:hint="请输入银行卡号" />
+                    </LinearLayout>
+                    <View style="@style/HorizontalLineStyle"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bank_next"
+                style="@style/MyButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/next" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
